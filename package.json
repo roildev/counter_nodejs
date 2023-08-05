@@ -20,6 +20,7 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "jest-supertest-matchers": "0.0.2",
     "supertest": "^6.3.3"
   }
 }
