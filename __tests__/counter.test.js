@@ -1,5 +1,3 @@
-// @ts-check
-
 import request from 'supertest';
 
 import solution from '../index.js';
