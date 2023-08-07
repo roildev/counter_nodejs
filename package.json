@@ -1,9 +1,11 @@
 {
   "name": "counter_nodejs",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start-dev": "nodemon bin/server.js",
     "test": "jest --colors"
   },
   "repository": {
@@ -20,7 +22,15 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "jest-supertest-matchers": "0.0.2",
+    "@babel/preset-env": "^7.22.9",
+    "babel-jest": "^29.6.2",
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
     "supertest": "^6.3.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   }
 }
